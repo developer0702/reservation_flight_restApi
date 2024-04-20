@@ -1,0 +1,21 @@
+package com.reservationsystem;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class ReservationsystemApplication  {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ReservationsystemApplication.class, args);
+	}
+
+	@Bean
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	}
+
+	
+}
